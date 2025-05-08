@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+      
+       input[type="text"]{
+        margin-left: 70px;
+       }
+        
+        
+        label {
+            font-weight: bold;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Basic info</h2>
+        <label for="">Employee ID</label> <input type="text" name="id" id="id"><br>
+        <label for="">Last Name</label> <input type="text" name="name" id="name"><br>
+        <label for="">First Name</label> <input type="text" name="name" id="name"><br>
+        <br>
+        <label for="">Gender</label>
+        <input type="radio" name style="margin-left: 20px;"> <label for="">Male</label> <br>
+        <input type="radio" name style="margin-left: 80px;"> <label for="">Female</label> <br>
+        <input type="radio" name style="margin-left: 80px;"> <label for="">XXX</label> <br>
+        <input type="radio" name style="margin-left: 80px;"> <label for="">ZZZ</label> <br>
+        <br>
+        <label for="">Title</label> <input type="text" name="title" id="title"><br>
+        <label for="">Sufix</label> <input type="text" name="" id=""> <br> <br>
+        <label for="">BirthDate</label> <input type="datetime-local" name="" id="" value=""> <br> <br>
+        <label for="">HireDate</label> <input type="datetime-local" name="" id="">
+        <br>
+        <label for="">SSN # (if applicable)</label> <input type="text" name="" id=""> <br> <br>
+        <label for="" style="margin-right: 20px;">Reports To</label> 
+        <select>
+            <option>Buchanan</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+          <br>
+    
+    <h2>Contact Info</h2>
+    <label for="">email</label> <input type="email" placeholder="name@example.com"> <br>
+    <label for="">addres</label> <input type="text" id="addres" value="7......."><br>
+    <label for="">City</label> <input type="text" name="city" id="city" value="London"><br>
+    <label for="region">Region</label>
+    <input type="text" id="region"> <br>
+    <label for="">Potasl code</label> <input type="text" name="postal" id="postal" value="WG2 7alf"><br>
+    <label for="">Country</label>  
+    <select>
+        <option>Buchanan</option>
+        <option>1</option>
+        <option>2</option>
+      </select>
+      <br>
+      <label for="">UsPhone home</label> <input type="text" name="phone" id="phone" value="(555) 555-5555"><br>
+
+      <h2>Optional Info</h2>
+        <!-- Notes -->
+  <label for="notes">Notes</label><br>
+  <textarea id="notes" rows="6" cols="60">
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ
+  </textarea><br><br>
+
+  <label>Preferred Shift</label><br>
+  <input type="checkbox" id="regular" name="shift" value="regular">
+  <label for="regular">Regular</label><br>
+  <input type="checkbox" id="graveyard" name="shift" value="graveyard" checked>
+  <label for="graveyard">Gravy Yard</label><br><br>
+
+  <label for="active">Active?</label><br>
+  <input type="checkbox" id="active" name="active" checked><br><br>
+
+  <label for="captcha">Are you human?</label><br>
+  <strong style="font-family: monospace;">TIDAWO</strong><br>
+  <em>Click to change</em><br>
+  <input type="text" id="captcha" name="captcha"><br><br>
+  <button style="margin-left: 450px;">Submit</button>
+  <button>Cancel</button>
+  <br>
+    </form>
+    
+</body>
+</html>
