@@ -1,0 +1,160 @@
+
+header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#page-logo a {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2rem;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+#hero {
+  position: relative;
+  height: 80vh;
+  background: url('./imagine/ocean.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+#hero-content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+#hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#hero-content a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  background: #ffd700;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#hero-content a:hover {
+  background: #e6c200;
+  color: #000;
+}
+
+/* ----- HIGHLIGHTS ----- */
+#highlights {
+  background: #e6f7ff;
+  padding: 4rem 2rem;
+}
+
+#highlights h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.destination {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.destination:hover {
+  transform: translateY(-5px);
+}
+
+.destination img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.destination p {
+  padding: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+.destination strong {
+  font-weight: 700;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  background: #111;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+footer a img {
+  width: 32px;
+  height: 32px;
+  filter: invert(100%);
+  transition: filter 0.3s;
+}
+
+footer a:hover img {
+  filter: invert(70%);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+
+    
+    .contact-form {
+      max-width: 700px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 24px;
+    }
+
+    .contact-form .row {
+      display: flex;    
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .contact-form .row.full {
+      display: block;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #333;
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #999;
+    }
+
+    .contact-form textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .contact-form .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 16px;
+    }
+    button {
+      background-color: aqua;
+    }
+
+  </style>
+</head>
+<body>
+
+  <form class="contact-form">
+    <h2>Get in touch with us by filling contact form below</h2>
+
+    <div class="row">
+      <input type="text" placeholder="* Enter your full name" required>
+      <input type="email" placeholder="* Enter your email address" required>
+    </div>
+
+    <div class="row full">
+      <input type="text" placeholder="Enter your subject">
+    </div>
+
+    <div class="row full">
+      <textarea placeholder="* Your message here..." required></textarea>
+    </div>
+
+    <div class="actions">
+      <button type="submit">Send message</button>
+      <div class="note">* Please fill all required form field, thanks!</div>
+    </div>
+  </form>
+
+</body>
+</html>
