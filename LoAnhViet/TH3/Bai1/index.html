@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quản Lý Công Việc</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="todo-app">
+    <h1>Quản Lý Công Việc</h1>
+    <div class="input-group">
+      <input type="text" id="new-task" placeholder="Nhập công việc mới...">
+      <button id="add-task-btn">Thêm</button>
+    </div>
+    <div class="filters">
+      <button data-filter="all" class="active">Tất cả</button>
+      <button data-filter="pending">Chưa xong</button>
+      <button data-filter="done">Đã xong</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>

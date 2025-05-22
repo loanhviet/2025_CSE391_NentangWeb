@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; background:#f4f4f4; display:flex; justify-content:center; padding:50px 0; margin:0 }
+    .todo-app { background:#fff; padding:20px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1); width:100%; max-width:400px }
+    .todo-app h1 { text-align:center; margin-bottom:20px; font-size:1.5rem }
+    .input-group { display:flex; gap:8px; margin-bottom:20px }
+    .input-group input { flex:1; padding:10px; border:1px solid #ccc; border-radius:4px }
+    .input-group button { padding:0 16px; border:none; background:#28a745; color:#fff; border-radius:4px; cursor:pointer }
+    .input-group button:hover { background:#218838 }
+    .filters { display:flex; gap:8px; margin-bottom:12px }
+    .filters button { flex:1; padding:6px; border:none; background:#e1e1e1; border-radius:4px; cursor:pointer }
+    .filters button.active { background:#28a745; color:#fff }
+    #task-list { list-style:none; padding:0; margin:0 }
+    #task-list li { display:flex; justify-content:space-between; align-items:center;
+                     padding:10px; border-bottom:1px solid #eee }
+    #task-list li.done .text { text-decoration:line-through; color:#777 }
+    #task-list li button.delete { background:#dc3545; color:#fff; border:none;
+                                  padding:4px 8px; border-radius:4px; cursor:pointer }
+    #task-list li button.delete:hover { background:#c82333 }

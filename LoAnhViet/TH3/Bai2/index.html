@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Họ Và Tên:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="*Nhập vào họ tên">
+                <span class="error" id="fullNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="*Nhập vào Email">
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật Khẩu:</label>
+                <input type="password" id="password" name="password" placeholder="*Nhập mật khẩu">
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="">Nhập lại mật khẩu</label>
+                <input type="password" id="repassword" name="repassword" placeholder="*Nhập lại mật khẩu">
+                <span class="error"></span>
+            </div>
+            <button type="submit" id="submitBtn">Register</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
